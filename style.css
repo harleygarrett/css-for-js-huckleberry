@@ -24,3 +24,64 @@ body {
 }
 
 /* Add styles here! */
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+header {
+  padding-block: 48px;
+}
+
+main {
+  border-top: 8px solid var(--color-grey);
+  padding-block: 48px;
+  background-color: var(--color-grey-dark);
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  display: inline-block;
+  margin-block: 0;
+  margin-inline-start: -28px;
+  border-bottom: 8px solid var(--color-yellow-dark);
+  padding-block: 16px;
+  padding-inline: 28px;
+  background-color: var(--color-yellow);
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+strong {
+  color: var(--color-green);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.card {
+  border-bottom: 8px solid var(--color-grey);
+  padding-block: 8px;
+  padding-inline: 20px;
+  background-color: var(--color-white);
+}
+
+.intro-chunk {
+  max-width: 28.5rem;
+  padding-inline: 20px;
+}
