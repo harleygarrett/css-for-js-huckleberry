@@ -1,3 +1,17 @@
+:root {
+  --color-black: #000000;
+
+  --color-white: #ffffff;
+
+  --color-green: #009966;
+
+  --color-grey: #999999;
+  --color-grey-dark: #666666;
+
+  --color-yellow: #ffbf00;
+  --color-yellow-dark: #cc9900;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
