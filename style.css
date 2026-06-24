@@ -1,15 +1,48 @@
 :root {
-  --color-black: #000000;
+  /* Colours */
 
-  --color-white: #ffffff;
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-white: hsl(0deg, 0%, 100%);
 
-  --color-green: #009966;
+  --color-grey-light: hsl(0deg, 0%, 60%);
+  --color-grey-dark: hsl(0deg, 0%, 40%);
 
-  --color-grey: #999999;
-  --color-grey-dark: #666666;
+  --color-primary: hsl(160deg, 100%, 30%);
 
-  --color-yellow: #ffbf00;
-  --color-yellow-dark: #cc9900;
+  --color-secondary: #ffbf00;
+  --color-secondary-dark: #cc9900;
+
+  /* Font Sizes */
+
+  --font-size-xl: 2rem;
+  --font-size-lg: 1.5rem;
+  --font-size-md: 1.25rem;
+  --font-size-sm: 1rem;
+
+  /* Line Heights */
+
+  --line-height-heading: 1.2;
+  --line-height-body: 1.5;
+
+  /* Spacing */
+
+  --spacing-2: 8px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 48px;
+  --spacing-12: 64px;
+  --spacing-14: 96px;
+  --spacing-16: 128px;
+
+  --spacing--2: -8px;
+  --spacing--4: -16px;
+  --spacing--6: -24px;
+  --spacing--8: -32px;
+  --spacing--10: -48px;
+  --spacing--12: -64px;
+  --spacing--14: -96px;
+  --spacing--16: -128px;
 }
 
 * {
@@ -31,57 +64,57 @@ body {
 }
 
 header {
-  padding-block: 48px;
+  padding-block: var(--spacing-10);
 }
 
 main {
-  border-top: 8px solid var(--color-grey);
-  padding-block: 48px;
+  border-top: var(--spacing-2) solid var(--color-grey-light);
+  padding-block: var(--spacing-10);
   background-color: var(--color-grey-dark);
 }
 
 h1,
 h2 {
-  line-height: 1.2;
+  line-height: var(--line-height-heading);
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-xl);
 }
 
 h2 {
   display: inline-block;
   margin-block: 0;
-  margin-inline-start: -28px;
-  border-bottom: 8px solid var(--color-yellow-dark);
-  padding-block: 16px;
-  padding-inline: 28px;
-  background-color: var(--color-yellow);
-  font-size: 1.5rem;
+  margin-inline-start: var(--spacing--8);
+  border-bottom: var(--spacing-2) solid var(--color-secondary-dark);
+  padding-block: var(--spacing-4);
+  padding-inline: var(--spacing-8);
+  background-color: var(--color-secondary);
+  font-size: var(--font-size-lg);
 }
 
 p {
-  line-height: 1.5;
-  font-size: 1.25rem;
+  line-height: var(--line-height-body);
+  font-size: var(--font-size-md);
 }
 
 strong {
-  color: var(--color-green);
+  color: var(--color-primary);
 }
 
 .max-width-wrapper {
-  max-width: 800px;
+  max-width: 50rem;
   margin-inline: auto;
 }
 
 .card {
-  border-bottom: 8px solid var(--color-grey);
-  padding-block: 8px;
-  padding-inline: 20px;
+  border-bottom: var(--spacing-2) solid var(--color-grey-light);
+  padding-block: var(--spacing-2);
+  padding-inline: var(--spacing-6);
   background-color: var(--color-white);
 }
 
 .intro-chunk {
   max-width: 28.5rem;
-  padding-inline: 20px;
+  padding-inline: var(--spacing-6);
 }
